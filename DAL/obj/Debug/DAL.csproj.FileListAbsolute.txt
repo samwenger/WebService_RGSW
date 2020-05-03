@@ -1,0 +1,9 @@
+C:\Users\uadmin\Source\Repos\WebServiceRGSW\DAL\bin\Debug\DAL.dll
+C:\Users\uadmin\Source\Repos\WebServiceRGSW\DAL\bin\Debug\DAL.pdb
+C:\Users\uadmin\Source\Repos\WebServiceRGSW\DAL\bin\Debug\DTO.dll
+C:\Users\uadmin\Source\Repos\WebServiceRGSW\DAL\bin\Debug\DTO.pdb
+C:\Users\uadmin\Source\Repos\WebServiceRGSW\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Users\uadmin\Source\Repos\WebServiceRGSW\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\uadmin\Source\Repos\WebServiceRGSW\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\uadmin\Source\Repos\WebServiceRGSW\DAL\obj\Debug\DAL.dll
+C:\Users\uadmin\Source\Repos\WebServiceRGSW\DAL\obj\Debug\DAL.pdb
