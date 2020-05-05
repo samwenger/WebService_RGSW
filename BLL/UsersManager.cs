@@ -11,13 +11,12 @@ namespace BLL
     public class UsersManager : IUsersManager
     {
         private IUsersDB UsersDb { get; }
-        private ITransactionsManager TransactionsManager { get; }
 
-        public UsersManager(IUsersDB usersDb, ITransactionsManager transactionsManager)
+        public UsersManager(IUsersDB usersDb)
         {
             UsersDb = usersDb;
-            TransactionsManager = transactionsManager;
         }
+
         public User GetUserByUsername(string username)
         {
             return UsersDb.GetUserByUsername(username);

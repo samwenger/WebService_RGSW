@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace BLL
 {
-    class TransactionsManager : ITransactionsManager
+    public class TransactionsManager : ITransactionsManager
     {
         private ITransactionsDB TransactionsDb { get; }
         private IUsersManager UsersManager { get; }

@@ -21,6 +21,5 @@ namespace BLL
 
         int GetNbOfCopies(string username);
 
-
     }
 }

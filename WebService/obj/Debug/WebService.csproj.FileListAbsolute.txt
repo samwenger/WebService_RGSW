@@ -1,7 +1,14 @@
 C:\Users\uadmin\Source\Repos\WebServiceRGSW\WebService\bin\WebService.dll.config
 C:\Users\uadmin\Source\Repos\WebServiceRGSW\WebService\bin\WebService.dll
 C:\Users\uadmin\Source\Repos\WebServiceRGSW\WebService\bin\WebService.pdb
+C:\Users\uadmin\Source\Repos\WebServiceRGSW\WebService\bin\BLL.dll
+C:\Users\uadmin\Source\Repos\WebServiceRGSW\WebService\bin\DAL.dll
+C:\Users\uadmin\Source\Repos\WebServiceRGSW\WebService\bin\DTO.dll
+C:\Users\uadmin\Source\Repos\WebServiceRGSW\WebService\bin\BLL.pdb
+C:\Users\uadmin\Source\Repos\WebServiceRGSW\WebService\bin\DAL.pdb
+C:\Users\uadmin\Source\Repos\WebServiceRGSW\WebService\bin\DTO.pdb
 C:\Users\uadmin\Source\Repos\WebServiceRGSW\WebService\obj\Debug\WebService.csprojAssemblyReference.cache
 C:\Users\uadmin\Source\Repos\WebServiceRGSW\WebService\obj\Debug\WebService.csproj.CoreCompileInputs.cache
+C:\Users\uadmin\Source\Repos\WebServiceRGSW\WebService\obj\Debug\WebService.csproj.CopyComplete
 C:\Users\uadmin\Source\Repos\WebServiceRGSW\WebService\obj\Debug\WebService.dll
 C:\Users\uadmin\Source\Repos\WebServiceRGSW\WebService\obj\Debug\WebService.pdb

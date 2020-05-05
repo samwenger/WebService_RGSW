@@ -1,0 +1,10 @@
+C:\Users\uadmin\Source\Repos\WebServiceRGSW\WindowsFormsApp\bin\Debug\WindowsFormsApp.exe.config
+C:\Users\uadmin\Source\Repos\WebServiceRGSW\WindowsFormsApp\bin\Debug\WindowsFormsApp.exe
+C:\Users\uadmin\Source\Repos\WebServiceRGSW\WindowsFormsApp\bin\Debug\WindowsFormsApp.pdb
+C:\Users\uadmin\Source\Repos\WebServiceRGSW\WindowsFormsApp\obj\Debug\WindowsFormsApp.csprojAssemblyReference.cache
+C:\Users\uadmin\Source\Repos\WebServiceRGSW\WindowsFormsApp\obj\Debug\WindowsFormsApp.Form1.resources
+C:\Users\uadmin\Source\Repos\WebServiceRGSW\WindowsFormsApp\obj\Debug\WindowsFormsApp.Properties.Resources.resources
+C:\Users\uadmin\Source\Repos\WebServiceRGSW\WindowsFormsApp\obj\Debug\WindowsFormsApp.csproj.GenerateResource.cache
+C:\Users\uadmin\Source\Repos\WebServiceRGSW\WindowsFormsApp\obj\Debug\WindowsFormsApp.csproj.CoreCompileInputs.cache
+C:\Users\uadmin\Source\Repos\WebServiceRGSW\WindowsFormsApp\obj\Debug\WindowsFormsApp.exe
+C:\Users\uadmin\Source\Repos\WebServiceRGSW\WindowsFormsApp\obj\Debug\WindowsFormsApp.pdb
