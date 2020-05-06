@@ -54,7 +54,7 @@ namespace DAL
             {
                 using (SqlConnection cn = new SqlConnection(connectionString))
                 {
-                    string query = "SELECT * FROM Transactions WHERE idUtilisateur=@idUtilisateur";
+                    string query = "SELECT * FROM Transactions INNER JOIN Types ON Transactions.idType = Types.idType WHERE idUtilisateur=@idUtilisateur";
                     SqlCommand cmd = new SqlCommand(query, cn);
                     cmd.Parameters.AddWithValue("@idUtilisateur", idUtilisateur);
                     cn.Open();
@@ -76,6 +76,9 @@ namespace DAL
                             result.date = (DateTime)dr["date"];
 
                             result.idType = (int)dr["idType"];
+
+                            result.type = (string)dr["type"];
+
 
                             results.Add(result);
                         }

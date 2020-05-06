@@ -13,6 +13,7 @@ namespace DTO
         public double montant { get; set; }
         public DateTime date { get; set; }
         public int idType { get; set; }
+        public string type { get; set; }
 
     }
 }

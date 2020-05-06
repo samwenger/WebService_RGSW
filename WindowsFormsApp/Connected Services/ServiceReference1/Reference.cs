@@ -37,6 +37,9 @@ namespace WindowsFormsApp.ServiceReference1 {
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private double montantField;
         
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string typeField;
+        
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
             get {
@@ -108,6 +111,19 @@ namespace WindowsFormsApp.ServiceReference1 {
                 if ((this.montantField.Equals(value) != true)) {
                     this.montantField = value;
                     this.RaisePropertyChanged("montant");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string type {
+            get {
+                return this.typeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.typeField, value) != true)) {
+                    this.typeField = value;
+                    this.RaisePropertyChanged("type");
                 }
             }
         }

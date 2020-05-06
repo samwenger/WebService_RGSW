@@ -55,7 +55,7 @@ namespace WindowsFormsApp
             {
                 listView1.Items.Add(new ListViewItem(new string[] { 
                     transaction.montant.ToString(),
-                    transaction.idType.ToString(),
+                    transaction.type.ToString(),
                     transaction.date.ToString(),
                 }));
             }

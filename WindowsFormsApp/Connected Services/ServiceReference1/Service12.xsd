@@ -13,6 +13,7 @@
       <xs:element minOccurs="0" name="idType" type="xs:int" />
       <xs:element minOccurs="0" name="idUtilisateur" type="xs:int" />
       <xs:element minOccurs="0" name="montant" type="xs:double" />
+      <xs:element minOccurs="0" name="type" nillable="true" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
   <xs:element name="Transaction" nillable="true" type="tns:Transaction" />

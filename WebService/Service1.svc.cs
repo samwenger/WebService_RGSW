@@ -3,6 +3,7 @@ using DAL;
 using DTO;
 using System;
 using System.Collections.Generic;
+using System.Web.Services.Description;
 
 namespace WebService
 {
@@ -11,62 +12,41 @@ namespace WebService
 
     public class Service1 : IService1
     {
+        private ITransactionsManager TransactionManager { get; }
+
+        public Service1()
+        {
+            IUsersDB UsersDB = new UsersDB();
+            IUsersManager UsersManager = new UsersManager(UsersDB);
+            ITransactionsDB TransactionDB = new TransactionsDB();
+            TransactionManager = new TransactionsManager(TransactionDB, UsersManager);        
+        }
+
         public int GetNbOfCopies(string username)
         {
-            IUsersDB usersDB = new UsersDB();
-            IUsersManager usersManager = new UsersManager(usersDB);
-            
-            ITransactionsDB transactionDB = new TransactionsDB();
-            ITransactionsManager transactionManager = new TransactionsManager(transactionDB, usersManager);
-
-            return transactionManager.GetNbOfCopies(username);
+            return TransactionManager.GetNbOfCopies(username);
         }
 
         public List<Transaction> GetTransactions(int idUtilisateur)
         {
-            IUsersDB usersDB = new UsersDB();
-            IUsersManager usersManager = new UsersManager(usersDB);
-
-            ITransactionsDB transactionDB = new TransactionsDB();
-            ITransactionsManager transactionManager = new TransactionsManager(transactionDB, usersManager);
-
-            return transactionManager.GetTransactionsByUser(idUtilisateur);
-            // Get type de transaction
+            return TransactionManager.GetTransactionsByUser(idUtilisateur);
         }
 
         public double TransferAmountFromFaculties(string username, double amount)
         {
-            IUsersDB usersDB = new UsersDB();
-            IUsersManager usersManager = new UsersManager(usersDB);
-
-            ITransactionsDB transactionDB = new TransactionsDB();
-            ITransactionsManager transactionManager = new TransactionsManager(transactionDB, usersManager);
-
-            var transaction = transactionManager.TransferAmountFromFaculties(username, amount);
+            var transaction = TransactionManager.TransferAmountFromFaculties(username, amount);
             return transaction.montant;
         }
 
         public double TransferAmountFromMachine(int uid, double amount)
-        {
-            IUsersDB usersDB = new UsersDB();
-            IUsersManager usersManager = new UsersManager(usersDB);
-
-            ITransactionsDB transactionDB = new TransactionsDB();
-            ITransactionsManager transactionManager = new TransactionsManager(transactionDB, usersManager);
-
-            var transaction = transactionManager.TransferAmount(uid, amount);
+        { 
+            var transaction = TransactionManager.TransferAmount(uid, amount);
             return transaction.montant;
         }
 
         public double TransferAmountFromOnline(string username, double amount)
         {
-            IUsersDB usersDB = new UsersDB();
-            IUsersManager usersManager = new UsersManager(usersDB);
-
-            ITransactionsDB transactionDB = new TransactionsDB();
-            ITransactionsManager transactionManager = new TransactionsManager(transactionDB, usersManager);
-
-            var transaction = transactionManager.TransferAmountFromOnline(username, amount);
+            var transaction = TransactionManager.TransferAmountFromOnline(username, amount);
             return transaction.montant;
         }
     }
